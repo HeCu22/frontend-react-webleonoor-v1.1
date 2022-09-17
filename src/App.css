@@ -27,11 +27,11 @@ body {
     font-family: Roboto, Arial, Helvetica, sans-serif;
     font-weight: 300;
     font-size: 16px;
-    background-color: #d2c7a4;
+    background-color: lightsteelblue;
 }
 
 main {
-    padding: 0 20px;
+    /*padding: 0 20px;*/
 }
 
 /* ------------------------------- 2. Typography ----------------------------------- */
@@ -40,58 +40,177 @@ main {
 /* ------------------------------- Reusables -------------------------------- */
 /* top-navigation */
 
-.top-region {
-   display: flex;
+.outer-container {
+    display: flex;
     width: 100%;
     flex-direction: row;
     justify-content: center;
-    background: #E9A372;
 }
 
-.inner-top-region {
-    flex-bottom: 1200px;
+/* De buitenste container is altijd de volledige schermbreedte. Het is een flexbox container die zijn inhoud altijd netjes horizontaal centreert */
+.outer-row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.top-nav-background {
+    background-color:#E9A372;
+
+}
+.main-nav-background {
+    background: #E7CEBA;
+
+}
+
+.inner-container {
+    flex-basis: 1400px;
     flex-grow: 0;
     flex-shrink: 1;
     margin: 0 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
+
+/* Top Nav  */
 .top-navigation {
-flex-basis: 50px;
+    flex-basis: 50px;
     flex-grow: 0;
     flex-shrink: 1;
     flex-wrap: wrap;
+
+}
+.top-nav-menu {
     display: flex;
-    justify-content: center;
+     height: 30px;
+}
+
+
+.main-nav {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: #E7CEBA;
+}
+
+.main-nav-menu {
 
 }
 
-/* Top Nav Menu */
+.main-header-background {
+    background: url('./assets/curtain.jpg') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
-.top-nav-menu {
+.icon-logo {
+    width: 105px;
+    height: 70px;
 
-    display: flex;
-    flex-direction: row;
-    flex-basis: 400px;
+}
+
+.favorite-icon, .shop-icon {
+    width: 32px;
+    height: 32px;
+    padding: 5px;
+}
+
+.shop-icon > path, .favorite-icon > path {
+    fill: grey;
+
+}
+
+
+.left-nav {
+    flex-basis: 90px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    padding: 0 30px;
+}
+
+.mid-nav {
+    flex-basis: 800px;
     flex-grow: 0;
     flex-shrink: 1;
-    justify-content: space-between;
-    height: 30px;
+    /*background-color: fuchsia;*/
+    display: flex;
+    justify-content: center;
+}
 
+
+
+.right-nav {
+    flex-basis: 300px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    margin: 10px 30px;
+    /*background-color: #D19C97;*/
 
 }
 
+.aside-left-top {
+    width: 100px;
+    flex-basis: 50px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    /*padding: 0 30px;*/
+    /*background-color: #D19C97;*/
+}
+.mid {
+    width: 350px;
+    flex-basis: 50px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    /*background-color: fuchsia;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.aside-bottom-right {
+    width: 800px;
+    flex-basis: 30px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    /*margin: 10px 30px;*/
+    /*background-color: #D19C97;*/
+}
+
+.max {
+    flex-basis: 200px;
+    flex-grow: 0.8;
+    flex-shrink: 1;
+    /*max-width: 400px;*/
+}
+
+
 button {
-    border: 1px solid #BC4C2A;
-    color:  #BC4C2A;
-    background-color: transparent;
-    font-size: 10px;
-    padding: 8px 16px;
+    color: white;
+    background: #E9A372;
+    width: 204px;
+    height: 46px;
+    border-radius: 12px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px;
+
+    padding: 8px 60px 8px 60px;
     text-transform: lowercase;
     cursor: pointer;
 }
+
+.fieldclass {
+    background: #3E2F36;
+    padding: 1px 30px 10px 30px;
+    color: #E7CEBA;
+}
+
 
 button:hover {
     background-color: #BC4C2A;
@@ -102,7 +221,7 @@ button:hover {
 button:disabled {
     cursor: not-allowed;
     border-color: #D08169;
-    color: #D08169;
+    color: gray;
 }
 
 
