@@ -1,0 +1,43 @@
+.outer-row-list {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.impression-home {
+    background: var(--color2);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 32vh;
+}
+
+
+.mid {
+    width: 100%;
+    flex-basis: 500px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 0 50px;
+}
+
+
+.max {
+    height: unset;
+    flex-basis: 200px;
+    flex-grow: 0;
+    flex-shrink: 1;
+
+}
+
+
+.mid-picture-span {
+    height: 120px;
+    flex-basis: 120px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    /*padding: 16px;*/
+}

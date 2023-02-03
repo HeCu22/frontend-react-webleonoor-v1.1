@@ -23,8 +23,38 @@
     box-sizing: border-box;
 }
 
+/* CSS HEX */
+* {
+    --eggshell: #e1e0caff;
+    --top-header: #E9A372;
+    --main-header: #E7CEBA;
+    --button-find: #E9A372;
+    --offwhite: #e5e4cf;
+    --button-go: #3E2F36;
+
+    --color1: #92725f;
+    --color2: #e7ceba;
+    --color3: #c5dc8e;
+    --color4: #edc486;
+    --color5: #d2c7a4;
+
+    --four: #aa6651;
+    --five: #c18a60;
+    --eight: #92715f;
+    --ten: #874F48;
+    ----pale-spring-bud: hsla(74, 74%, 50%, 1);
+
+    --wine: #6b2737ff;
+    --persian-orange: #e08e45ff;
+    --lemon-chiffon: #fffacdff;
+    --peach: #ffe5b4ff;
+    --granny-smith-apple: #bdf7b7ff;
+    --powder-blue: #accfd1ff;
+
+}
+
 body {
-    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
     font-weight: 300;
     font-size: 16px;
     background-color: lightsteelblue;
@@ -57,12 +87,12 @@ main {
 }
 
 .top-nav-background {
-    background-color:#E9A372;
-
+    /*background-color: var(--dark-goldenrod);*/
+    background-color: var(--color1);
 }
 .main-nav-background {
-    background: #E7CEBA;
-
+    /*background: var(--metallic-sunburst);*/
+    background-color: var(--color4);
 }
 
 .inner-container {
@@ -75,44 +105,22 @@ main {
     align-items: center;
 }
 
-/* Top Nav  */
-.top-navigation {
-    flex-basis: 50px;
-    flex-grow: 0;
-    flex-shrink: 1;
-    flex-wrap: wrap;
-
-}
-.top-nav-menu {
-    display: flex;
-     height: 30px;
-}
 
 
-.main-nav {
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    background: #E7CEBA;
-}
 
-.main-nav-menu {
-
+.main-background {
+    /*background: var(--metallic-sunburst);*/
+    background-color: var(--color5);
 }
 
 .main-header-background {
-    background: url('./assets/curtain.jpg') ;
+    background: var(--color2);
     background-repeat: no-repeat;
     background-size: cover;
+    min-height: 32vh;
 }
 
-.icon-logo {
-    width: 105px;
-    height: 70px;
 
-}
 
 .favorite-icon, .shop-icon {
     width: 32px;
@@ -126,72 +134,36 @@ main {
 }
 
 
-.left-nav {
-    flex-basis: 90px;
-    flex-grow: 0;
-    flex-shrink: 0;
-    padding: 0 30px;
-}
-
-.mid-nav {
-    flex-basis: 800px;
-    flex-grow: 0;
-    flex-shrink: 1;
-    /*background-color: fuchsia;*/
-    display: flex;
-    justify-content: center;
-}
 
 
-
-.right-nav {
-    flex-basis: 300px;
-    flex-grow: 0;
-    flex-shrink: 1;
-    margin: 10px 30px;
-    /*background-color: #D19C97;*/
-
-}
-
-.aside-left-top {
-    width: 100px;
-    flex-basis: 50px;
-    flex-grow: 0;
-    flex-shrink: 0;
-    /*padding: 0 30px;*/
-    /*background-color: #D19C97;*/
-}
-.mid {
-    width: 350px;
-    flex-basis: 50px;
-    flex-grow: 0;
-    flex-shrink: 1;
-    /*background-color: fuchsia;*/
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.aside-bottom-right {
-    width: 800px;
-    flex-basis: 30px;
-    flex-grow: 0;
-    flex-shrink: 1;
-    /*margin: 10px 30px;*/
-    /*background-color: #D19C97;*/
-}
-
-.max {
+.header-content {
     flex-basis: 200px;
     flex-grow: 0.8;
     flex-shrink: 1;
-    /*max-width: 400px;*/
+    margin-bottom: 10px;
+    color: var(--ten);
 }
+
+.cards {
+    width: 100%;
+    flex-basis: 20px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /*background-color: var(--metallic-sunburst);*/
+    background-color: var(--color5);
+    padding: 0 50px;
+    font-size: 20px;
+}
+
+
 
 
 button {
     color: white;
-    background: #E9A372;
+    background: var(--five);
     width: 204px;
     height: 46px;
     border-radius: 12px;
@@ -205,7 +177,7 @@ button {
     cursor: pointer;
 }
 
-.fieldclass {
+.header-button {
     background: #3E2F36;
     padding: 1px 30px 10px 30px;
     color: #E7CEBA;
@@ -213,16 +185,38 @@ button {
 
 
 button:hover {
-    background-color: #BC4C2A;
+    background-color: var(--ten);
     color: white;
     transition: all .4s ease-in-out;
 }
 
 button:disabled {
     cursor: not-allowed;
-    border-color: #D08169;
+    border-color: var(--eight);
     color: gray;
 }
+
+
+
+
+
+
+.moved {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 80% 10%;
+    border-radius: 8px;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+
 
 
 

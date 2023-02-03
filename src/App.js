@@ -1,94 +1,55 @@
-import React from "react";
-
-import {ReactComponent as Favorite} from "./assets/carbon-favorite.svg";
-import {ReactComponent as ShoppingCart} from "./assets/shopping.svg";
-import {ReactComponent as Search} from "./assets/search.svg";
-import {ReactComponent as Goto} from "./assets/go.svg";
-import logo from "./assets/logo_webLeonoor.jpg";
+import React from 'react';
+import {Route, Switch, Redirect} from 'react-router-dom';
+import Topnav from "./components/topnav/Topnav";
+import Home from "./pages/home/Home";
 import './App.css';
 
-function App() {
+import Footer from "./components/footer/Footer";
+import Vergezichten from "./pages/vergezichten/Vergezichten";
+import Schetsen from "./pages/schetsen/Schetsen";
+import Prints from "./pages/prints/Prints";
+import Sterren from "./pages/sterren/Sterren";
+import Sprookjes from "./pages/sprookjes/Sprookjes";
+import Jamesdean from "./pages/jamesdean/Jamesdean";
+import Portretten from "./pages/portretten/Portretten";
+import Culturemix from "./pages/culturemix/Culturemix";
 
-    function Button({children, clickHandler, isDisabled, fieldClass}) {
-        return (
-            <button className={fieldClass}
-                type="button"
-                disabled={isDisabled}
-                onClick={clickHandler}>
-                {children}
-            </button>);
-    }
-
+function App(props) {
     return (
         <>
-            <header className="outer-container top-nav-background">
-                <div className="inner-container">
-
-                    <div className="top-navigation">
-                        <nav className="top-nav-menu">
-                            <ul>
-                                <li>Nieuws</li>
-                                <li>Profiel</li>
-                                <li>Werkwijze</li>
-                                <li>Contact</li>
-                                <li>Inhoud</li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-            </header>
-
-            <main className="outer-container main-nav-background">
-                <div className="outer-row">
-                    <div className="left-nav">
-                        <span className="max">
-                        <img className="icon-logo" src={logo} alt="Logo-webleonoor"/>
-                        </span>
-                    </div>
-              <div className="mid-nav">
-                        <ul className="outer-row">
-                            <li>Sprookjes</li>
-                            <li>Film sterren</li>
-                            <li>James Dean</li>
-                            <li>Print strukturen</li>
-                            <li>Portretten</li>
-                            <li>Ver gezichten</li>
-                        </ul>
-                    </div>
-                    <div className="right-nav">
-                        <Button
-                            clickHandler={() => console.log("Zoeken")}
-                            isDisabled={false}> <Search/> Zoek</Button>
-
-
-                        <Favorite className="favorite-icon"/>
-                        <ShoppingCart className="shop-icon"/>
-                    </div>
-                </div>
-
-            </main>
-
-
-            <main className="outer-container main-header-background">
-                <div className="inner-container">
-                    <div className="aside-left-top"></div>
-                    <div className="mid">
-                        <div className="max">
-                        <h1>Bekijk nieuwe thema's</h1>
-                        <p> WebLeonoor Schilderijen Composities Portret & sfeer</p>
-                        <Button
-                            clickHandler={() => console.log("Bekijken")}
-                            isDisabled={false} fieldClass="fieldclass"> Bekijken <Goto className="shop-icon"/></Button>
-                        </div>
-                    </div>
-                    <div className="aside-bottom-right"></div>
-                </div>
-            </main>
-
-
+            <Topnav/>
+            <Switch>
+                <Route exact path="/sprookjes">
+                    <Sprookjes/>
+                </Route>
+                <Route exact path="/culturemix">
+                    <Culturemix/>
+                </Route>
+                <Route exact path="/portretten">
+                    <Portretten/>
+                </Route>
+                <Route exact path="/jamesdean">
+                    <Jamesdean/>
+                </Route>
+                <Route exact path="/sterren">
+                    <Sterren/>
+                </Route>
+                <Route exact path="/vergezichten">
+                    <Vergezichten/>
+                </Route>
+                <Route exact path="/schetsen">
+                    <Schetsen/>
+                </Route>
+                <Route exact path="/prints">
+                    <Prints/>
+                </Route>
+                <Route path="/">
+                    <Home/>
+                </Route>
+            </Switch>
+            <Footer/>
         </>
-    )
-        ;
+    );
 }
 
 export default App;

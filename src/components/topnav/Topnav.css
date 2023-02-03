@@ -1,0 +1,12 @@
+/* Top Nav  */
+.top-navigation {
+    flex-basis: 50px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-wrap: wrap;
+
+}
+.top-nav-menu {
+    display: flex;
+    height: 30px;
+}
