@@ -54,7 +54,7 @@ function Portretten(props) {
                     </div>
                 </div>
             </main>
-            <main className="outer-container main-background">
+            <main className="outer-container main-background-title">
                 <div className="inner-container">
                     <div className="cards">
                         <p>Portretten</p>

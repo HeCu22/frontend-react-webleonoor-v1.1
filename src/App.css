@@ -106,21 +106,22 @@ main {
 }
 
 
-
-
-.main-background {
-    /*background: var(--metallic-sunburst);*/
-    background-color: var(--color5);
-}
-
 .main-header-background {
     background: var(--color2);
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 32vh;
+    min-height: 38vh;
 }
 
+.main-background, .main-background-title {
+    /*background: var(--metallic-sunburst);*/
+    background-color: var(--color5);
+}
 
+.main-background {
+    /*background: var(--metallic-sunburst);*/
+    min-height: 32vh;
+}
 
 .favorite-icon, .shop-icon {
     width: 32px;

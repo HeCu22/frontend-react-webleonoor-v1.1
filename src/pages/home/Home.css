@@ -25,19 +25,25 @@
 }
 
 
-.max {
-    height: unset;
-    flex-basis: 200px;
-    flex-grow: 0;
-    flex-shrink: 1;
-
-}
-
-
 .mid-picture-span {
     height: 120px;
     flex-basis: 120px;
     flex-grow: 0;
     flex-shrink: 1;
     /*padding: 16px;*/
+}
+
+.cards p {
+    margin-top: 20px;
+    padding-top: 18px;
+}
+
+
+article .max {
+    display: block;
+    height: 247px;
+    flex-basis: 200px;
+    flex-grow: 0;
+    flex-shrink: 1;
+
 }

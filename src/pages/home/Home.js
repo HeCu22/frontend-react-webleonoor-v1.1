@@ -5,6 +5,7 @@ import {Link} from "react-router-dom";
 import {ReactComponent as Back} from "../../assets/Back-arrow.svg";
 import {ReactComponent as Forward} from "../../assets/Forward-arrow.svg";
 import Article from "../../components/article/Article";
+import tulip from "../../assets/images/yellow_tulip.jpg";
 import roze from "../../assets/images/princess_pink.jpg";
 import loren from "../../assets/images/sofia_loren_in_iItalia.jpg";
 import boots from "../../assets/images/snow_boots.jpg";
@@ -45,19 +46,19 @@ function Home(props) {
                         </div>
 
                         <Article
-                            fieldclass="card"
-                            tag="Sprookjes"
-                            image={roze}
-                            title="Princess pink"
+                            fieldclass="top-card"
+                            tag="Bloemen"
+                            image={tulip}
+                            title="Tulp"
                             description="50x70 acryl op papier"
                         />
                     </div>
                 </div>
             </main>
-            <main className="outer-container main-background">
+            <main className="outer-container main-background-title">
                 <div className="inner-container">
                     <div className="cards">
-                        <p>Collection items</p>
+                        <p>Collectieitems</p>
                         <span><Back/> <Forward/></span>
                     </div>
 
@@ -67,6 +68,14 @@ function Home(props) {
                 <div className="inner-container">
 
                     <div className="outer-row">
+                        <Article
+                            fieldclass="card-portrait"
+                            tag="Sprookjes"
+                            image={roze}
+                            title="Roze Prinses"
+                            description="50x90 acryl op papier"
+                        />
+
                         <Article
                             fieldclass="card"
                             tag="Sterren"
@@ -87,7 +96,7 @@ function Home(props) {
                         <Article
                             fieldclass="card"
 
-                            tag="Look-away"
+                            tag="Kleur"
                             image={vogels}
                             title="Vogels in vlucht"
                             description="70x50 acryl op papier"
