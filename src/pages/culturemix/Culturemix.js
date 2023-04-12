@@ -20,12 +20,13 @@ function Culturemix(props) {
         <>
             <Mainnav>
                 <ul className="outer-row">
+                    {/*<li><Link to="/culturemix"> Cultuurmix </Link></li>*/}
+                    <li><Link to="/jamesdean"> James Dean </Link></li>
+                    <li><Link to="/vergezichten"> Kleur </Link></li>
+                    <li><Link to="/portretten">Portret</Link></li>
+                    <li><Link to="/prints"> Prints</Link></li>
                     <li><Link to="/sprookjes"> Sprookjes </Link></li>
                     <li><Link to="/sterren"> Sterren</Link></li>
-                    <li><Link to="/jamesdean"> James Dean </Link></li>
-                    <li><Link to="/prints"> Prints</Link></li>
-                    <li><Link to="/portretten">Portret</Link></li>
-                    <li><Link to="/vergezichten"> Kleur </Link></li>
                     <li><Link to="/schetsen"> Zwart/wit </Link></li>
                 </ul>
 
@@ -36,10 +37,9 @@ function Culturemix(props) {
                     <div className="outer-row">
                         <div className="mid">
                             <div className="header-content">
-                                <h1>Cultures</h1>
-                                <h2> African</h2>
-                                <h3> Arabic Marokko</h3>
-                                <h4> woestijn of oerwoud</h4>
+                                <h1>Culturen</h1>
+                                <h2>Afrikaans, Arabisch, Marokkaans....</h2>
+                                <h4>gesluierd of gemaskeerd</h4>
                                 <Button fieldClass="header-button"
                                         clickHandler={() => console.log("Bekijken")}
                                         isDisabled={false}> Bekijken <Goto className="shop-icon"/></Button>
@@ -61,7 +61,7 @@ function Culturemix(props) {
 
                     <div className="outer-row-list">
                         <Article
-                            fieldclass="card"
+                            fieldclass="card-portrait"
                             tag="marokko"
                             image={marokko}
                             title="Marokkaanse bruid"

@@ -38,6 +38,11 @@
     padding-top: 18px;
 }
 
+/* go forward and backward button not yet implemented */
+.cards span svg circle, path{
+    fill: transparent;
+    stroke: transparent;
+}
 
 article .max {
     display: block;

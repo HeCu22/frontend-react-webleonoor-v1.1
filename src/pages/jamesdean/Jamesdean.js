@@ -18,12 +18,13 @@ function Jamesdean(props) {
         <>
             <Mainnav>
                 <ul className="outer-row">
+                    <li><Link to="/culturemix"> Cultuurmix </Link></li>
+                    {/*<li><Link to="/jamesdean"> James Dean </Link></li>*/}
+                    <li><Link to="/vergezichten"> Kleur </Link></li>
+                    <li><Link to="/portretten">Portret</Link></li>
+                    <li><Link to="/prints"> Prints</Link></li>
                     <li><Link to="/sprookjes"> Sprookjes </Link></li>
                     <li><Link to="/sterren"> Sterren</Link></li>
-                    <li> James Dean </li>
-                    <li><Link to="/prints"> Prints</Link></li>
-                    <li><Link to="/portretten">Portret</Link></li>
-                    <li><Link to="/vergezichten"> Kleur </Link></li>
                     <li><Link to="/schetsen"> Zwart/wit </Link></li>
                 </ul>
 
@@ -34,7 +35,7 @@ function Jamesdean(props) {
                         <div className="mid">
                             <div className="header-content">
                                 <h1>James Dean</h1>
-                                <h2> portretten, min of meer realistisch of fantasie.</h2>
+                                <h2> Min of meer realistisch of fantasie.</h2>
                                 <h3> Van James Dean zijn vele mooie afbeeldingen te vinden.</h3>
                                 <h4></h4>
 
@@ -45,11 +46,11 @@ function Jamesdean(props) {
                             </div>
                         </div>
                         <Article
-                            fieldclass="card"
+                            fieldclass="top-card"
                             tag="JD"
                             image={jd}
                             title="James Dean"
-                            description="40x50 acryl op canvas hardboard"
+                            description="40x50 acryl op canvas board"
                         />
                     </div>
                 </div>
@@ -71,21 +72,21 @@ function Jamesdean(props) {
 
 
                         <Article
-                            fieldclass="card"
+                            fieldclass="card-portrait"
                             tag="JD colors"
                             image={jdcolors}
                             title="James Dean colors"
                             description="40x50 acryl op papier"
                         />
                         <Article
-                            fieldclass="card"
+                            fieldclass="-portrait"
                             tag=" smoke"
                             image={jdsmokey}
                             title="James smoking"
                             description="50x80 acryl op papier"
                         />
                         <Article
-                            fieldclass="card"
+                            fieldclass="card-portrait"
                             tag="JD storm"
                             image={jdstorm}
                             title="James Dean storm"

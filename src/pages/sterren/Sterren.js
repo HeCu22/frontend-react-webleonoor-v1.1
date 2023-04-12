@@ -19,13 +19,13 @@ function Sterren(props) {
             <Mainnav>
 
                 <ul className="outer-row">
-
-                    <li><Link to="/sprookjes"> Sprookjes </Link></li>
-                    <li>Sterren</li>
+                    <li><Link to="/culturemix"> Cultuurmix </Link></li>
                     <li><Link to="/jamesdean"> James Dean </Link></li>
-                    <li><Link to="/prints"> Prints</Link></li>
-                    <li><Link to="/portretten">Portret</Link></li>
                     <li><Link to="/vergezichten"> Kleur </Link></li>
+                    <li><Link to="/portretten">Portret</Link></li>
+                    <li><Link to="/prints"> Prints</Link></li>
+                    <li><Link to="/sprookjes"> Sprookjes </Link></li>
+                    {/*<li><Link to="/sterren"> Sterren</Link></li>*/}
                     <li><Link to="/schetsen"> Zwart/wit </Link></li>
                 </ul>
 
@@ -36,8 +36,7 @@ function Sterren(props) {
                         <div className="mid">
                             <div className="header-content">
                                 <h1>Sterren in de schijnwerpers </h1>
-                                <h2> Een filmster, een muziektalent of sportheld..</h2>
-                                <h3> James Dean, Sofia Loren, Claudia Cardinale, Mohammed Ali</h3>
+                                <h2> Een filmster, een stijlicoon of sportheld..</h2>
                                 <h4> Het verhaal dat verteld wordt of een levensverhaal </h4>
                                 <Button fieldClass="header-button"
                                         clickHandler={() => console.log("Bekijken")}
@@ -71,7 +70,7 @@ function Sterren(props) {
 
                     <div className="outer-row-list">
                         <Article
-                            fieldclass="card"
+                            fieldclass="card-portrait"
                             tag="ali"
                             image={ali}
                             title="Mohammed Ali"
@@ -80,14 +79,14 @@ function Sterren(props) {
                         />
 
                         <Article
-                            fieldclass="card"
+                            fieldclass="card-portrait"
                             tag="CC"
                             image={cc}
                             title="Claudia Cardinale once upon"
                             description="3D 4x70x90 acryl op canvas"
                         />
                         <Article
-                            fieldclass="card"
+                            fieldclass="-portrait"
                             tag="JD"
                             image={jdroze}
                             title="James Dean Roze"

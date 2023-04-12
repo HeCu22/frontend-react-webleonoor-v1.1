@@ -18,14 +18,14 @@ function Sprookjes(props) {
         <>
             <Mainnav>
                 <ul className="outer-row">
-                    <li> Sprookjes</li>
-                    <li><Link to="/culturemix"> Culturen </Link></li>
-                    <li><Link to="/sterren">Sterren</Link></li>
+                    <li><Link to="/culturemix"> Cultuurmix </Link></li>
                     <li><Link to="/jamesdean"> James Dean </Link></li>
-                    <li><Link to="/prints"> Prints</Link></li>
+                    <li><Link to="/vergezichten"> Kleur </Link></li>
                     <li><Link to="/portretten">Portret</Link></li>
-                    <li><Link to="/vergezichten"> Kleur </Link> </li>
-                    <li><Link to="/schetsen"> Zwart/wit </Link> </li>
+                    <li><Link to="/prints"> Prints</Link></li>
+                    {/*<li><Link to="/sprookjes"> Sprookjes </Link></li>*/}
+                    <li><Link to="/sterren"> Sterren</Link></li>
+                    <li><Link to="/schetsen"> Zwart/wit </Link></li>
                 </ul>
 
             </Mainnav>
@@ -69,7 +69,7 @@ function Sprookjes(props) {
 
                     <div className="outer-row-list">
                         <Article
-                            fieldclass="card"
+                            fieldclass="card-portrait"
                             tag="lady"
                             image={lady}
                             title="Dame in kostuum"
@@ -77,7 +77,7 @@ function Sprookjes(props) {
                             valuta=""
                             price=""/>
                         <Article
-                            fieldclass="card"
+                            fieldclass="card-portrait"
                             tag="geisha"
                             image={geisha}
                             title="Asian woman"
@@ -85,7 +85,7 @@ function Sprookjes(props) {
                             valuta=""
                             price=""/>
                         <Article
-                            fieldclass="card"
+                            fieldclass="card-portrait"
                             tag="boeddha"
                             image={boeddha}
                             title="Boeddha with mendhi"

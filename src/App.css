@@ -120,7 +120,7 @@ main {
 
 .main-background {
     /*background: var(--metallic-sunburst);*/
-    min-height: 32vh;
+    min-height: 45vh;
 }
 
 .favorite-icon, .shop-icon {

@@ -20,13 +20,14 @@ function Vergezichten(props) {
         <>
             <Mainnav>
                 <ul className="outer-row">
-                    <li><Link to="/sprookjes"> Sprookjes </Link></li>
-                    <li><Link to="/sterren">Sterren</Link></li>
+                    <li><Link to="/culturemix"> Cultuurmix </Link></li>
                     <li><Link to="/jamesdean"> James Dean </Link></li>
-                    <li><Link to="/prints"> Prints</Link></li>
+                    {/*<li><Link to="/vergezichten"> Kleur </Link></li>*/}
                     <li><Link to="/portretten">Portret</Link></li>
-                    <li>Kleur</li>
-                    <li><Link to="/schetsen"> Zwart/wit </Link> </li>
+                    <li><Link to="/prints"> Prints</Link></li>
+                    <li><Link to="/sprookjes"> Sprookjes </Link></li>
+                    <li><Link to="/sterren"> Sterren</Link></li>
+                    <li><Link to="/schetsen"> Zwart/wit </Link></li>
                 </ul>
 
             </Mainnav>
@@ -45,7 +46,7 @@ function Vergezichten(props) {
                             </div>
                         </div>
                         <Article
-                            fieldclass="card"
+                            fieldclass="top-card"
                             tag="italian"
                             image={italian}
                             title="Italië"

@@ -19,13 +19,13 @@ function Home(props) {
             <Mainnav>
 
                 <ul className="outer-row">
-
-                    <li><Link to="/sprookjes"> Sprookjes </Link></li>
-                    <li><Link to="/sterren">Sterren</Link></li>
+                    <li><Link to="/culturemix"> Cultuurmix </Link></li>
                     <li><Link to="/jamesdean"> James Dean </Link></li>
-                    <li><Link to="/prints"> Prints</Link></li>
-                    <li><Link to="/portretten"> Portret </Link></li>
                     <li><Link to="/vergezichten"> Kleur </Link></li>
+                    <li><Link to="/portretten">Portret</Link></li>
+                    <li><Link to="/prints"> Prints</Link></li>
+                    <li><Link to="/sprookjes"> Sprookjes </Link></li>
+                    <li><Link to="/sterren"> Sterren</Link></li>
                     <li><Link to="/schetsen"> Zwart/wit </Link></li>
                 </ul>
 
@@ -58,7 +58,7 @@ function Home(props) {
             <main className="outer-container main-background-title">
                 <div className="inner-container">
                     <div className="cards">
-                        <p>Collectieitems</p>
+                        <p>Collectie items</p>
                         <span><Back/> <Forward/></span>
                     </div>
 

@@ -18,12 +18,13 @@ function Portretten(props) {
         <>
             <Mainnav>
                 <ul className="outer-row">
+                    <li><Link to="/culturemix"> Cultuurmix </Link></li>
+                    <li><Link to="/jamesdean"> James Dean </Link></li>
+                    <li><Link to="/vergezichten"> Kleur </Link></li>
+                    {/*<li><Link to="/portretten">Portret</Link></li>*/}
+                    <li><Link to="/prints"> Prints</Link></li>
                     <li><Link to="/sprookjes"> Sprookjes </Link></li>
                     <li><Link to="/sterren"> Sterren</Link></li>
-                    <li><Link to="/jamesdean"> James Dean </Link></li>
-                    <li><Link to="/prints"> Prints</Link></li>
-                    <li>Portret</li>
-                    <li><Link to="/vergezichten"> Kleur </Link></li>
                     <li><Link to="/schetsen"> Zwart/wit </Link></li>
                 </ul>
 
@@ -68,24 +69,24 @@ function Portretten(props) {
                     <div className="outer-row-list">
 
                         <Article
-                            fieldclass="card"
+                            fieldclass="card-portrait"
                             tag="blue"
                             image={blue}
-                            title="Portret van een jongen in blauw"
+                            title="Portret in blauw"
                             description="25x40 acryl op papier"
                         />
                         <Article
-                            fieldclass="card"
+                            fieldclass="card-portrait"
                             tag="man"
                             image={man}
                             title="Portret oude man"
                             description="40x50 acryl op papier"
                         />
                         <Article
-                            fieldclass="card"
+                            fieldclass="card-portrait"
                             tag="jongen"
                             image={jongen}
-                            title="Portret van een jongen"
+                            title="Portret ve jongen"
                             description="30x40 houtskool op stevig papier"
                         />
 
