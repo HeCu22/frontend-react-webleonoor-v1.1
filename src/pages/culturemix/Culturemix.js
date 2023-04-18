@@ -56,6 +56,15 @@ function Culturemix(props) {
                     </div>
                 </div>
             </main>
+            <main className="outer-container main-background-title">
+                <div className="inner-container">
+                    <div className="cards">
+                        <p>Cultuur in portret</p>
+                        <span><Back/> <Forward/></span>
+                    </div>
+
+                </div>
+            </main>
             <div className="outer-container main-background">
                 <div className="inner-container">
 

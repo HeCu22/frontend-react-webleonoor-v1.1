@@ -10,16 +10,13 @@
 }
 
 .top-card {
-    flex-basis: 200px;
+    flex-basis: 210px;
     max-height: 247px;
     margin-bottom: 50px;
-    /*height: 28vh;*/
 }
 
 .card-portrait {
     flex-basis: 200px;
-    /*max-height: 247px;*/
-    /*margin-bottom: 50px;*/
 }
 
 

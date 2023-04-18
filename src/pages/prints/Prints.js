@@ -11,6 +11,7 @@ import gordes from "../../assets/images/building_with_terras.jpg";
 import castle from "../../assets/images/castle.jpg";
 import structures from "../../assets/images/collage_printstructures.jpg";
 import './Prints.css';
+import blockprint from "../../assets/images/blockprints.jpg";
 
 
 function Prints(props) {
@@ -35,16 +36,23 @@ function Prints(props) {
                         <div className="">
                             <div className="header-content">
                                 <h1> Strukturen en gebouwen </h1>
-                                <h2> Oude muren, oude schoenen in blockprint.</h2>
-                                <h3> Een zonnig terras in een oude Franse stad.</h3>
-                                <h4> Herinneringen, nostalgie en sfeerbeelden. </h4>
+                                <h2> Oude muren, oude schoenen in blockprint</h2>
+                                <h3> Een zonnig terras, een oude Franse stad</h3>
+                                <h4> Herinneringen, nostalgie en sfeerbeelden </h4>
 
                                 <Button fieldClass="header-button"
                                         clickHandler={() => console.log("Bekijken")}
                                         isDisabled={false}> Bekijken <Goto className="shop-icon"/></Button>
                             </div>
                         </div>
-                    </div>
+
+                        <Article
+                            fieldclass="card-portrait"
+                            tag="blockprint"
+                            image={blockprint}
+                            title="Blockprints"
+                            description="20x30 blockprint on paper"
+                        /></div>
                 </div>
             </main>
             <main className="outer-container main-background-title">

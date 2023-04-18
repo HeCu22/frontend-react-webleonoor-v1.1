@@ -35,10 +35,8 @@ function Jamesdean(props) {
                         <div className="mid">
                             <div className="header-content">
                                 <h1>James Dean</h1>
-                                <h2> Min of meer realistisch of fantasie.</h2>
+                                <h2> Realistisch of fantasie.</h2>
                                 <h3> Van James Dean zijn vele mooie afbeeldingen te vinden.</h3>
-                                <h4></h4>
-
 
                                 <Button fieldClass="header-button"
                                         clickHandler={() => console.log("Bekijken")}

@@ -35,7 +35,7 @@ function Sterren(props) {
                     <div className="outer-row">
                         <div className="mid">
                             <div className="header-content">
-                                <h1>Sterren in de schijnwerpers </h1>
+                                <h1>Sterren</h1>
                                 <h2> Een filmster, een stijlicoon of sportheld..</h2>
                                 <h4> Het verhaal dat verteld wordt of een levensverhaal </h4>
                                 <Button fieldClass="header-button"
@@ -59,7 +59,7 @@ function Sterren(props) {
             <main className="outer-container main-background-title">
                 <div className="inner-container">
                     <div className="cards">
-                        <p>Sterren</p>
+                        <p> Sterfiguren in portret</p>
                         <span><Back/> <Forward/></span>
                     </div>
 
@@ -82,7 +82,7 @@ function Sterren(props) {
                             fieldclass="card-portrait"
                             tag="CC"
                             image={cc}
-                            title="Claudia Cardinale once upon"
+                            title="CC once upon"
                             description="3D 4x70x90 acryl op canvas"
                         />
                         <Article

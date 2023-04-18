@@ -35,9 +35,8 @@ function Sprookjes(props) {
                         <div className="mid">
                             <div className="header-content">
                                 <h1>Sprookjes prinsessen </h1>
-                                <h2> Sprookjesfiguren, decoraties, structuren.</h2>
-                                <h3> Droom,  mysterie, fantasie of stijlicoon. </h3>
-                                <h4> Geïnspireerd op fotoportretten, huidversieringen en vreemde culturen</h4>
+                                <h3> Droom,  mysterie of fantasie </h3>
+                                <h4> Geïnspireerd op fotoportretten, huidversieringen en Oosterse culturen</h4>
 
                                 <Button fieldClass="header-button"
                                         clickHandler={() => console.log("Bekijken")}
@@ -58,7 +57,7 @@ function Sprookjes(props) {
             <main className="outer-container main-background-title">
                 <div className="inner-container">
                     <div className="cards">
-                        <p>Sprookjes</p>
+                        <p>Sprookjesfiguren in portret</p>
                         <span><Back/> <Forward/></span>
                     </div>
 
@@ -88,7 +87,7 @@ function Sprookjes(props) {
                             fieldclass="card-portrait"
                             tag="boeddha"
                             image={boeddha}
-                            title="Boeddha with mendhi"
+                            title="Boeddha w mendhi"
                             description="50x80 acryl op papier"
                             valuta=""
                             price=""/>

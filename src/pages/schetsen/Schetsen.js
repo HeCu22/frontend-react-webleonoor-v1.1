@@ -14,6 +14,7 @@ import Mainnav from "../../components/mainnav/Mainnav";
 
 import Button from "../../components/button/Button";
 import {ReactComponent as Goto} from "../../assets/go.svg";
+import schets from "../../assets/images/vrije_schets.jpg";
 
 function Schetsen(props) {
     return (
@@ -27,24 +28,32 @@ function Schetsen(props) {
                     <li><Link to="/prints"> Prints</Link></li>
                     <li><Link to="/sprookjes"> Sprookjes </Link></li>
                     <li><Link to="/sterren"> Sterren</Link></li>
-                    {/*<li><Link to="/schetsen"> Zwart/wit </Link></li>*/}
                 </ul>
 
-            </Mainnav>
+            </Mainnav>                    {/*<li><Link to="/schetsen"> Zwart/wit </Link></li>*/}
+
             <main className="outer-container impression-schetsen">
                 <div className="inner-container">
                     <div className="outer-row">
                         <div className="">
                             <div className="header-content">
-                                <h1>Blikveld en vergezicht</h1>
-                                <h2> Stilleven, dichtbij of veraf</h2>
-                                <h3> Zwart-wit contrasten</h3>
-                                <h4> een heidelandschap</h4>
+                                <h1>Schetsen</h1>
+                                <h2> Stilleven</h2>
+                                <h4> Zwart-wit contrasten</h4>
+                                <h2>Vergezicht</h2>
+                                <h4> een landschap</h4>
                                 <Button fieldClass="header-button"
                                         clickHandler={() => console.log("Bekijken")}
                                         isDisabled={false}> Bekijken <Goto className="shop-icon"/></Button>
                             </div>
                         </div>
+                        <Article
+                            fieldclass="card"
+                            tag="schets"
+                            image={schets}
+                            title="Vrije schets"
+                            description="70x50 houtskool op papier"
+                        />
                     </div>
                 </div>
             </main>

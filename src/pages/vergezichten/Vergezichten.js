@@ -36,10 +36,10 @@ function Vergezichten(props) {
                     <div className="outer-row">
                         <div className="mid">
                             <div className="header-content">
-                                <h1>Blikveld en vergezicht</h1>
-                                <h2> dichtbij of veraf</h2>
-                                <h3> kleurcontrasten</h3>
-                                <h4> een dorp of stad in de verte</h4>
+                                <h1>Vergezicht</h1>
+                                <h3>een dorp of stad in de verte</h3>
+                                <h1>Blikveld </h1>
+                                        <h4>en kleurcontrasten</h4>
                                 <Button fieldClass="header-button"
                                         clickHandler={() => console.log("Bekijken")}
                                         isDisabled={false}> Bekijken <Goto className="shop-icon"/></Button>
@@ -58,7 +58,7 @@ function Vergezichten(props) {
             <main className="outer-container main-background-title">
                 <div className="inner-container">
                     <div className="cards">
-                        <p>Vergezichten</p>
+                        <p>Blikveld en vergezichten in kleur</p>
                         <span><Back/> <Forward/></span>
                     </div>
 
