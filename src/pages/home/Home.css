@@ -1,0 +1,54 @@
+.outer-row-list {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.impression-home {
+    background: var(--color2);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 32vh;
+}
+
+
+.mid {
+    width: 100%;
+    flex-basis: 500px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 0 50px;
+}
+
+
+.mid-picture-span {
+    height: 120px;
+    flex-basis: 120px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    /*padding: 16px;*/
+}
+
+.cards p {
+    margin-top: 20px;
+    padding-top: 18px;
+}
+
+/* go forward and backward button not yet implemented */
+.cards span svg circle, path{
+    fill: transparent;
+    stroke: transparent;
+}
+
+article .max {
+    display: block;
+    height: 247px;
+    flex-basis: 200px;
+    flex-grow: 0;
+    flex-shrink: 1;
+
+}

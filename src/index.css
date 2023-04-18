@@ -1,28 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&family=Poppins:wght@200;300;700&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
-    /*line-height: 1.5;*/
-    /*color: white;*/
-    position: relative;
-    width: 1920px;
-    height: 1080px;
+#root {
 
-    background: #E7CEBA;
 }
 
+
+
+
+
 p {
-    font-family: Arial, sans-serif;
+    font-family: Poppins, Arial, sans-serif;
     margin: 16px 0;
 }
 
 h1 {
-    font-size: 50px;
+    font-family: 'Rock Salt', Georgia, sans-serif;
+    font-weight: 400;
+    /*font-size: 48px;*/
+    /*line-height: 115px;*/
+    color: #3E2F36;
 }
 
 h4 {
     font-size: 18px;
+}
+
+img {
+    width: 100%;
+    margin-left: 10px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px;
+    gap: 48px;
 }

@@ -23,15 +23,45 @@
     box-sizing: border-box;
 }
 
+/* CSS HEX */
+* {
+    --eggshell: #e1e0caff;
+    --top-header: #E9A372;
+    --main-header: #E7CEBA;
+    --button-find: #E9A372;
+    --offwhite: #e5e4cf;
+    --button-go: #3E2F36;
+
+    --color1: #92725f;
+    --color2: #e7ceba;
+    --color3: #c5dc8e;
+    --color4: #edc486;
+    --color5: #d2c7a4;
+
+    --four: #aa6651;
+    --five: #c18a60;
+    --eight: #92715f;
+    --ten: #874F48;
+    ----pale-spring-bud: hsla(74, 74%, 50%, 1);
+
+    --wine: #6b2737ff;
+    --persian-orange: #e08e45ff;
+    --lemon-chiffon: #fffacdff;
+    --peach: #ffe5b4ff;
+    --granny-smith-apple: #bdf7b7ff;
+    --powder-blue: #accfd1ff;
+
+}
+
 body {
-    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
     font-weight: 300;
     font-size: 16px;
-    background-color: #d2c7a4;
+    background-color: lightsteelblue;
 }
 
 main {
-    padding: 0 20px;
+    /*padding: 0 20px;*/
 }
 
 /* ------------------------------- 2. Typography ----------------------------------- */
@@ -40,70 +70,154 @@ main {
 /* ------------------------------- Reusables -------------------------------- */
 /* top-navigation */
 
-.top-region {
-   display: flex;
+.outer-container {
+    display: flex;
     width: 100%;
     flex-direction: row;
     justify-content: center;
-    background: #E9A372;
 }
 
-.inner-top-region {
-    flex-bottom: 1200px;
+/* De buitenste container is altijd de volledige schermbreedte. Het is een flexbox container die zijn inhoud altijd netjes horizontaal centreert */
+.outer-row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.top-nav-background {
+    /*background-color: var(--dark-goldenrod);*/
+    background-color: var(--color1);
+}
+.main-nav-background {
+    /*background: var(--metallic-sunburst);*/
+    background-color: var(--color4);
+}
+
+.inner-container {
+    flex-basis: 1400px;
     flex-grow: 0;
     flex-shrink: 1;
     margin: 0 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+
+.main-header-background {
+    background: var(--color2);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 38vh;
+}
+
+.main-background, .main-background-title {
+    /*background: var(--metallic-sunburst);*/
+    background-color: var(--color5);
+}
+
+.main-background {
+    /*background: var(--metallic-sunburst);*/
+    min-height: 45vh;
+}
+
+.favorite-icon, .shop-icon {
+    width: 32px;
+    height: 32px;
+    padding: 5px;
+}
+
+.shop-icon > path, .favorite-icon > path {
+    fill: grey;
 
 }
-.top-navigation {
-flex-basis: 50px;
+
+
+
+
+.header-content {
+    flex-basis: 200px;
+    flex-grow: 0.8;
+    flex-shrink: 1;
+    margin-bottom: 10px;
+    color: var(--ten);
+}
+
+.cards {
+    width: 100%;
+    flex-basis: 20px;
     flex-grow: 0;
     flex-shrink: 1;
-    flex-wrap: wrap;
-    display: flex;
-    justify-content: center;
-
-}
-
-/* Top Nav Menu */
-
-.top-nav-menu {
-
     display: flex;
     flex-direction: row;
-    flex-basis: 400px;
-    flex-grow: 0;
-    flex-shrink: 1;
     justify-content: space-between;
-    height: 30px;
-
-
+    /*background-color: var(--metallic-sunburst);*/
+    background-color: var(--color5);
+    padding: 0 50px;
+    font-size: 20px;
 }
 
+
+
+
 button {
-    border: 1px solid #BC4C2A;
-    color:  #BC4C2A;
-    background-color: transparent;
-    font-size: 10px;
-    padding: 8px 16px;
+    color: white;
+    background: var(--five);
+    width: 204px;
+    height: 46px;
+    border-radius: 12px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px;
+
+    padding: 8px 60px 8px 60px;
     text-transform: lowercase;
     cursor: pointer;
 }
 
+.header-button {
+    background: #3E2F36;
+    padding: 1px 30px 10px 30px;
+    color: #E7CEBA;
+}
+
+
 button:hover {
-    background-color: #BC4C2A;
+    background-color: var(--ten);
     color: white;
     transition: all .4s ease-in-out;
 }
 
 button:disabled {
     cursor: not-allowed;
-    border-color: #D08169;
-    color: #D08169;
+    border-color: var(--eight);
+    color: gray;
 }
+
+
+
+
+
+
+.moved {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 80% 10%;
+    border-radius: 8px;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+
 
 
 

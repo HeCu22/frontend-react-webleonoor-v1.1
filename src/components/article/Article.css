@@ -1,0 +1,60 @@
+.card, .card-portrait {
+    width: 400px;
+    flex-basis: 300px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    /*background-color: fuchsia;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.top-card {
+    flex-basis: 210px;
+    max-height: 247px;
+    margin-bottom: 50px;
+}
+
+.card-portrait {
+    flex-basis: 200px;
+}
+
+
+article {
+    position: relative;
+    text-align: center;
+    margin: 16px;
+
+}
+
+.tag {
+    background-color: var(--four);
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    font-size: 8px;
+    padding: 4px;
+}
+
+article p {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+
+}
+
+article p span {
+    font-size: 18px;
+    margin: 1px;
+    /*height: 4vh;*/
+}
+
+article > p {
+    margin: 1px;
+    font-size: 14px;
+}
+

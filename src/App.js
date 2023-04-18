@@ -1,64 +1,53 @@
-import React from "react";
+import React from 'react';
+import {Route, Switch, Redirect} from 'react-router-dom';
+import Topnav from "./components/topnav/Topnav";
+import Home from "./pages/home/Home";
 import './App.css';
 
-function App() {
+import Footer from "./components/footer/Footer";
+import Vergezichten from "./pages/vergezichten/Vergezichten";
+import Schetsen from "./pages/schetsen/Schetsen";
+import Prints from "./pages/prints/Prints";
+import Sterren from "./pages/sterren/Sterren";
+import Sprookjes from "./pages/sprookjes/Sprookjes";
+import Jamesdean from "./pages/jamesdean/Jamesdean";
+import Portretten from "./pages/portretten/Portretten";
+import Culturemix from "./pages/culturemix/Culturemix";
 
-    function Button({children, clickHandler, isDisabled}) {
-        return (
-            <button
-                type="button"
-                disabled={isDisabled}
-                onClick={clickHandler}>
-                {children}
-            </button>);
-    }
-
+function App(props) {
     return (
         <>
-            <header className="top-region">
-                <div className="inner-top-region">
-                    <div className="top-navigation">
-                        <nav className="top-nav-menu">
-                            <Button
-                                children="nieuws"
-                                clickHandler={() => console.log("nieuws")}
-                                isDisabled={false}
-                            />
-
-                            <Button
-                                children="Profiel"
-                                clickHandler={() => console.log("nieuws")}
-                                isDisabled={false}
-                            />
-
-                            <Button
-                                children="Werkwijze"
-                                clickHandler={() => console.log("nieuws")}
-                                isDisabled={false}
-                            />
-
-                            <Button
-                                children="Portfolio"
-                                clickHandler={() => console.log("nieuws")}
-                                isDisabled={false}
-                            />
-
-                            <Button
-                                children="Contact"
-                                clickHandler={() => console.log("nieuws")}
-                                isDisabled={false}
-                            />
-
-                            <Button
-                                children="nieuws"
-                                clickHandler={() => console.log("inhoud")}
-                                isDisabled={false}
-                            />
-                        </nav>
-                    </div>
-                </div>
-            </header>
-            <h1>WebLeonoor</h1>
+            <Topnav/>
+            <Switch>
+                <Route exact path="/sprookjes">
+                    <Sprookjes/>
+                </Route>
+                <Route exact path="/culturemix">
+                    <Culturemix/>
+                </Route>
+                <Route exact path="/portretten">
+                    <Portretten/>
+                </Route>
+                <Route exact path="/jamesdean">
+                    <Jamesdean/>
+                </Route>
+                <Route exact path="/sterren">
+                    <Sterren/>
+                </Route>
+                <Route exact path="/vergezichten">
+                    <Vergezichten/>
+                </Route>
+                <Route exact path="/schetsen">
+                    <Schetsen/>
+                </Route>
+                <Route exact path="/prints">
+                    <Prints/>
+                </Route>
+                <Route path="/">
+                    <Home/>
+                </Route>
+            </Switch>
+            <Footer/>
         </>
     );
 }

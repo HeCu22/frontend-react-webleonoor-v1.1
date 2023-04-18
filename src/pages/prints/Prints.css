@@ -1,0 +1,14 @@
+.outer-row-list {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.impression-prints {
+    background: var(--color2);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 32vh;
+}
