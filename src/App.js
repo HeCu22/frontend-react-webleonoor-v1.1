@@ -13,6 +13,7 @@ import Sprookjes from "./pages/sprookjes/Sprookjes";
 import Jamesdean from "./pages/jamesdean/Jamesdean";
 import Portretten from "./pages/portretten/Portretten";
 import Culturemix from "./pages/culturemix/Culturemix";
+import Profile from "./pages/profile/Profile";
 
 function App(props) {
     return (
@@ -42,6 +43,9 @@ function App(props) {
                 </Route>
                 <Route exact path="/prints">
                     <Prints/>
+                </Route>
+                <Route exact path="/profile">
+                    <Profile/>
                 </Route>
                 <Route path="/">
                     <Home/>

@@ -13,7 +13,7 @@ function Topnav(props) {
                         <nav className="top-nav-menu">
                             <ul>
                                 <li><Link to="/">Nieuws</Link></li>
-                                <li><Link to="/">Profiel</Link></li>
+                                <li><Link to="/profile">Profiel</Link></li>
                                 <li><Link to="/">Werkwijze</Link></li>
                                 <li><Link to="/">Contact</Link></li>
                                 <li><Link to="/">Inhoud</Link></li>
