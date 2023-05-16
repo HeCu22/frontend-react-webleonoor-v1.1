@@ -1,9 +1,7 @@
 import React from 'react';
-import {Link} from "react-router-dom";
 import {ReactComponent as Back} from "../../assets/Back-arrow.svg";
 import {ReactComponent as Forward} from "../../assets/Forward-arrow.svg";
 import Article from "../../components/article/Article";
-import Mainnav from "../../components/mainnav/Mainnav";
 import Button from "../../components/button/Button";
 import {ReactComponent as Goto} from "../../assets/go.svg";
 import blue from "../../assets/images/portrait_of_boy_blue.jpg";
@@ -12,24 +10,16 @@ import jongen from "../../assets/images/jongensportret.jpg";
 import man from "../../assets/images/portrait_of_man_warm.jpg";
 import './Portretten.css';
 import girl from "../../assets/images/portrait_of_girl.jpg";
+import Mainnavcomp from "../../components/mainnav/Mainnavcomp";
 
 
 function Portretten(props) {
     return (
         <>
-            <Mainnav>
-                <ul className="outer-row">
-                    <li><Link to="/culturemix"> Cultuurmix </Link></li>
-                    <li><Link to="/jamesdean"> James Dean </Link></li>
-                    <li><Link to="/vergezichten"> Kleur </Link></li>
-                    {/*<li><Link to="/portretten">Portret</Link></li>*/}
-                    <li><Link to="/prints"> Prints</Link></li>
-                    <li><Link to="/sprookjes"> Sprookjes </Link></li>
-                    <li><Link to="/sterren"> Sterren</Link></li>
-                    <li><Link to="/schetsen"> Zwart/wit </Link></li>
-                </ul>
+            <Mainnavcomp
+                keuze="portretten"
+            />
 
-            </Mainnav>
             <main className="outer-container impression-jd">
                 <div className="inner-container">
                     <div className="outer-row">

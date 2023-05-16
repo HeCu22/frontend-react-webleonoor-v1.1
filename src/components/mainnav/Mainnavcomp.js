@@ -7,7 +7,7 @@ import {ReactComponent as Search} from "../../assets/search.svg";
 import {ReactComponent as Favorite} from "../../assets/carbon-favorite.svg";
 import {ReactComponent as ShoppingCart} from "../../assets/shopping.svg";
 
-function Mainnav({children}) {
+function Mainnavcomp({keuze}) {
     return (
         <>
             <main className="outer-container main-nav-background">
@@ -18,7 +18,16 @@ function Mainnav({children}) {
                         </span>
                     </div>
                     <div className="mid-nav">
-                        {children}
+                        <ul className="outer-row">
+                            <li>{keuze !== "culturemix" ? <Link to="/culturemix"> culturemix </Link> : <> {keuze} </> } </li>
+                            <li>{keuze !== "jamesdean" ? <Link to="/jamesdean"> James Dean </Link> : <> {keuze} </> } </li>
+                            <li>{keuze !== "vergezichten" ? <Link to="/vergezichten"> vergezichten </Link> : <> {keuze} </> } </li>
+                            <li>{keuze !== "portretten" ? <Link to="/portretten"> portretten </Link> : <> {keuze} </> } </li>
+                            <li>{keuze !== "prints" ? <Link to='/prints'> prints </Link> : <> {keuze} </> } </li>
+                            <li>{keuze !== "sprookjes" ? <Link to="/sprookjes"> sprookjes </Link> : <> {keuze} </> } </li>
+                            <li>{keuze !== "sterren" ? <Link to="/sterren"> sterren </Link> : <> {keuze} </> } </li>
+                            <li>{keuze !== "schetsen" ? <Link to="/schetsen"> schetsen </Link> : <> {keuze} </> } </li>
+                        </ul>
 
                     </div>
                     <div className="right-nav">
@@ -37,4 +46,4 @@ function Mainnav({children}) {
     );
 }
 
-export default Mainnav;
+export default Mainnavcomp;

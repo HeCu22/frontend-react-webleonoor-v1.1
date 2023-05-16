@@ -1,0 +1,15 @@
+.picture-space {
+    flex: 0 1 250px;
+    max-width: 250px;
+    height: 250px;
+    border-radius: 500px;
+    width: 100%;
+    object-fit: cover;
+    object-position: -2px 10%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;}
+
+.picture-span {
+    flex: 0 1 250px;
+   }
+

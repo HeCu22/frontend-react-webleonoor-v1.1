@@ -1,5 +1,5 @@
 import React from 'react';
-import {Route, Switch, Redirect} from 'react-router-dom';
+import {Route, Switch} from 'react-router-dom';
 import Topnav from "./components/topnav/Topnav";
 import Home from "./pages/home/Home";
 import './App.css';
@@ -14,7 +14,8 @@ import Jamesdean from "./pages/jamesdean/Jamesdean";
 import Portretten from "./pages/portretten/Portretten";
 import Culturemix from "./pages/culturemix/Culturemix";
 import Profile from "./pages/profile/Profile";
-
+import Contact from "./pages/contact/Contact"
+import Werkwijze from "./pages/werkwijze/Werkwijze";
 function App(props) {
     return (
         <>
@@ -46,6 +47,12 @@ function App(props) {
                 </Route>
                 <Route exact path="/profile">
                     <Profile/>
+                </Route>
+                <Route exact path="/contact">
+                    <Contact/>
+                </Route>
+                <Route exact path="/werkwijze">
+                    <Werkwijze/>
                 </Route>
                 <Route path="/">
                     <Home/>

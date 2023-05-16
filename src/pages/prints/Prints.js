@@ -1,9 +1,8 @@
 import React from 'react';
-import {Link} from "react-router-dom";
 import {ReactComponent as Back} from "../../assets/Back-arrow.svg";
 import {ReactComponent as Forward} from "../../assets/Forward-arrow.svg";
 import Article from "../../components/article/Article";
-import Mainnav from "../../components/mainnav/Mainnav";
+import Mainnavcomp from "../../components/mainnav/Mainnavcomp";
 import Button from "../../components/button/Button";
 import {ReactComponent as Goto} from "../../assets/go.svg";
 import boots from "../../assets/images/snow_boots.jpg";
@@ -17,19 +16,9 @@ import blockprint from "../../assets/images/blockprints.jpg";
 function Prints(props) {
     return (
         <>
-            <Mainnav>
-                <ul className="outer-row">
-                    <li><Link to="/culturemix"> Cultuurmix </Link></li>
-                    <li><Link to="/jamesdean"> James Dean </Link></li>
-                    <li><Link to="/vergezichten"> Kleur </Link></li>
-                    <li><Link to="/portretten">Portret</Link></li>
-                    {/*<li><Link to="/prints"> Prints</Link></li>*/}
-                    <li><Link to="/sprookjes"> Sprookjes </Link></li>
-                    <li><Link to="/sterren"> Sterren</Link></li>
-                    <li><Link to="/schetsen"> Zwart/wit </Link></li>
-                </ul>
-
-            </Mainnav>
+            <Mainnavcomp
+                keuze="prints"
+            />
             <main className="outer-container impression-prints">
                 <div className="inner-container">
                     <div className="outer-row">
