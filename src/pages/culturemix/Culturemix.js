@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import {useHistory} from "react-router-dom";
 import {ReactComponent as Back} from "../../assets/Back-arrow.svg";
 import {ReactComponent as Forward} from "../../assets/Forward-arrow.svg";
 import Article from "../../components/article/Article";
@@ -13,6 +14,7 @@ import './Culturemix.css';
 
 
 function Culturemix(props) {
+    const history = useHistory();
     return (
         <>
             <Mainnavcomp
@@ -27,7 +29,7 @@ function Culturemix(props) {
                                 <h2>Afrikaans, Arabisch, Marokkaans....</h2>
                                 <h4>gesluierd of gemaskeerd</h4>
                                 <Button fieldClass="header-button"
-                                        clickHandler={() => console.log("Bekijken")}
+                                        clickHandler={() => history.push('/Cultdetails')}
                                         isDisabled={false}> Bekijken <Goto className="shop-icon"/></Button>
                             </div>
                         </div>

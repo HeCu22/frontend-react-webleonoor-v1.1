@@ -12,7 +12,8 @@ import Sterren from "./pages/sterren/Sterren";
 import Sprookjes from "./pages/sprookjes/Sprookjes";
 import Jamesdean from "./pages/jamesdean/Jamesdean";
 import Portretten from "./pages/portretten/Portretten";
-import Culturemix from "./pages/culturemix/Culturemix";
+import Culturemix from "./pages/culturemix/Culturemix"
+import Cultdetails from "./pages/cultdetails/Cultdetails";
 import Profile from "./pages/profile/Profile";
 import Contact from "./pages/contact/Contact"
 import Werkwijze from "./pages/werkwijze/Werkwijze";
@@ -26,6 +27,9 @@ function App(props) {
                 </Route>
                 <Route exact path="/culturemix">
                     <Culturemix/>
+                </Route>
+                <Route exact path="/cultdetails">
+                    <Cultdetails/>
                 </Route>
                 <Route exact path="/portretten">
                     <Portretten/>

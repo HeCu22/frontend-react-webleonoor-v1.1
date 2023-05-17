@@ -1,0 +1,54 @@
+.mid {
+    flex-basis: 800px;
+  }
+
+
+.impression-cult-details {
+
+    background: url('../../assets/images/dancing.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 5% 20%;
+    min-height: 32vh;
+}
+
+
+.tile, .tilefirst {
+    flex-basis: 340px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--color2);
+    border: 1px solid var(--color3);
+    border-radius: 8px;
+    padding: 0 20px;
+    margin-left: 20px;
+}
+
+
+.tiles {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: 340px;
+    padding: 20px;
+    margin: 20px;
+    gap: 10px;
+
+}
+
+.tile .max {
+    height: unset;
+}
+
+.tile p {
+    /*padding-left: 20px;*/
+    /*margin-left: 20px;*/
+
+}
+
+.tilefirst {
+    padding-left: 60px;
+}
