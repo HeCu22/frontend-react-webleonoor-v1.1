@@ -1,4 +1,5 @@
 import React from 'react';
+import {useHistory} from "react-router-dom";
 import {ReactComponent as Back} from "../../assets/Back-arrow.svg";
 import {ReactComponent as Forward} from "../../assets/Forward-arrow.svg";
 import Article from "../../components/article/Article";
@@ -11,7 +12,8 @@ import jdcolors from "../../assets/images/james_dean_colors.jpg";
 import './Jamesdean.css';
 import Mainnavcomp from "../../components/mainnav/Mainnavcomp";
 
-function Jamesdean(props) {
+function Jamesdean(props)  {
+const history = useHistory();
     return (
         <>
             <Mainnavcomp
@@ -28,7 +30,7 @@ function Jamesdean(props) {
                                 <h3> Van James Dean zijn vele mooie afbeeldingen te vinden.</h3>
 
                                 <Button fieldClass="header-button"
-                                        clickHandler={() => console.log("Bekijken")}
+                                        clickHandler={() => history.push('/Sterdetails')}
                                         isDisabled={false}> Bekijken <Goto className="shop-icon"/></Button>
                             </div>
                         </div>

@@ -3,6 +3,7 @@ import './Cultdetails.css';
 import Mainnavcomp from "../../components/mainnav/Mainnavcomp";
 import Article from "../../components/article/Article";
 import berbermeisje from "../../assets/images/berbermeisje.jpg";
+import dameinjurk from "../../assets/images/foto_dame_in_jurk.jpg";
 
 function Cultdetails(props) {
     return (
@@ -14,9 +15,10 @@ function Cultdetails(props) {
                     <div className="outer-row">
                         <div className="mid">
                             <div className="tile">
-                                <h1>Culturen</h1>
-                                <h5>Afrikaans, Arabisch, Marokkaans....</h5>
-                                <h5>gesluierd of gemaskeerd</h5>
+                                <h1>Culturen en Mysterie</h1>
+                                <h2>Sprookjes, prinsen, prinsessen</h2>
+                                <h3>droom en fantasie</h3>
+                                <h5>Afrikaans, Arabisch, Marokkaans....gesluierd of gemaskeerd</h5>
                                 <p>Geïnspireerd op fotoportretten, huidversieringen en vreemde culturen.
                                     Versluiering, opsiering en vele decoraties heb ik meestal in printstructuren
                                     uitgewerkt.
@@ -51,6 +53,16 @@ function Cultdetails(props) {
                                 image={berbermeisje}
                                 title="foto van berbermeisje"
                                 description="inspiratie voor 'marokkaanse bruid'"
+                            />
+
+                        </div>
+                        <div className="tile">
+                            <Article
+                                fieldclass="card-portrait"
+                                tag="sprookjes"
+                                image={dameinjurk}
+                                title="foto dame in mooie jurk"
+                                description="inspiratie voor 'Dame in kostuum'"
                             />
 
                         </div>

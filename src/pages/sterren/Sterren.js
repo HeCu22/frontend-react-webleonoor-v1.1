@@ -1,4 +1,5 @@
 import React from 'react';
+import {useHistory} from "react-router-dom";
 import {ReactComponent as Back} from "../../assets/Back-arrow.svg";
 import {ReactComponent as Forward} from "../../assets/Forward-arrow.svg";
 import Article from "../../components/article/Article";
@@ -13,6 +14,7 @@ import Mainnavcomp from "../../components/mainnav/Mainnavcomp";
 
 
 function Sterren(props) {
+    const history = useHistory();
     return (
         <>
             <Mainnavcomp
@@ -28,7 +30,7 @@ function Sterren(props) {
                                 <h2> Een filmster, een stijlicoon of sportheld..</h2>
                                 <h4> Het verhaal dat verteld wordt of een levensverhaal </h4>
                                 <Button fieldClass="header-button"
-                                        clickHandler={() => console.log("Bekijken")}
+                                        clickHandler={() => history.push('/Sterdetails')}
                                         isDisabled={false}> Bekijken <Goto className="shop-icon"/></Button>
                             </div>
                         </div>

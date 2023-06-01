@@ -9,6 +9,7 @@ import Vergezichten from "./pages/vergezichten/Vergezichten";
 import Schetsen from "./pages/schetsen/Schetsen";
 import Prints from "./pages/prints/Prints";
 import Sterren from "./pages/sterren/Sterren";
+import Sterdetails from "./pages/sterdetails/Sterdetails";
 import Sprookjes from "./pages/sprookjes/Sprookjes";
 import Jamesdean from "./pages/jamesdean/Jamesdean";
 import Portretten from "./pages/portretten/Portretten";
@@ -17,6 +18,7 @@ import Cultdetails from "./pages/cultdetails/Cultdetails";
 import Profile from "./pages/profile/Profile";
 import Contact from "./pages/contact/Contact"
 import Werkwijze from "./pages/werkwijze/Werkwijze";
+import Portretdetails from "./pages/portretdetails/Portretdetails";
 function App(props) {
     return (
         <>
@@ -34,11 +36,17 @@ function App(props) {
                 <Route exact path="/portretten">
                     <Portretten/>
                 </Route>
+                <Route exact path="/portretdetails">
+                    <Portretdetails/>
+                </Route>
                 <Route exact path="/jamesdean">
                     <Jamesdean/>
                 </Route>
                 <Route exact path="/sterren">
                     <Sterren/>
+                </Route>
+                <Route exact path="/sterdetails">
+                    <Sterdetails/>
                 </Route>
                 <Route exact path="/vergezichten">
                     <Vergezichten/>

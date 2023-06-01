@@ -1,4 +1,5 @@
 import React from 'react';
+import {useHistory} from "react-router-dom";
 import {ReactComponent as Back} from "../../assets/Back-arrow.svg";
 import {ReactComponent as Forward} from "../../assets/Forward-arrow.svg";
 import Article from "../../components/article/Article";
@@ -14,6 +15,7 @@ import Mainnavcomp from "../../components/mainnav/Mainnavcomp";
 
 
 function Portretten(props) {
+const history = useHistory();
     return (
         <>
             <Mainnavcomp
@@ -31,7 +33,7 @@ function Portretten(props) {
 
 
                                 <Button fieldClass="header-button"
-                                        clickHandler={() => console.log("Bekijken")}
+                                        clickHandler={() => history.push('/Portretdetails')}
                                         isDisabled={false}> Bekijken <Goto className="shop-icon"/></Button>
                             </div>
                         </div>
