@@ -19,6 +19,10 @@ import Profile from "./pages/profile/Profile";
 import Contact from "./pages/contact/Contact"
 import Werkwijze from "./pages/werkwijze/Werkwijze";
 import Portretdetails from "./pages/portretdetails/Portretdetails";
+import Vergezichtdetails from "./pages/vergezichtdetails/Vergezichtdetails";
+import Nieuws from "./pages/nieuws/Nieuws";
+import Portfolio from "./pages/portfolio/Portfolio";
+
 function App(props) {
     return (
         <>
@@ -51,6 +55,10 @@ function App(props) {
                 <Route exact path="/vergezichten">
                     <Vergezichten/>
                 </Route>
+                <Route exact path="/vergezichtdetails">
+                    <Vergezichtdetails/>
+                </Route>
+
                 <Route exact path="/schetsen">
                     <Schetsen/>
                 </Route>
@@ -65,6 +73,12 @@ function App(props) {
                 </Route>
                 <Route exact path="/werkwijze">
                     <Werkwijze/>
+                </Route>
+                <Route exact path="/portfolio">
+                    <Portfolio/>
+                </Route>
+                <Route exact path="/nieuws">
+                    <Nieuws/>
                 </Route>
                 <Route path="/">
                     <Home/>

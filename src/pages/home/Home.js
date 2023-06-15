@@ -1,4 +1,5 @@
 import React from 'react';
+import {useHistory} from "react-router-dom";
 import './Home.css';
 import {ReactComponent as Back} from "../../assets/Back-arrow.svg";
 import {ReactComponent as Forward} from "../../assets/Forward-arrow.svg";
@@ -13,6 +14,7 @@ import {ReactComponent as Goto} from "../../assets/go.svg";
 import Mainnavcomp from "../../components/mainnav/Mainnavcomp";
 
 function Home(props) {
+    const history = useHistory();
     return (
         <>
             <Mainnavcomp
@@ -29,7 +31,7 @@ function Home(props) {
                                 <h3> Composities Portret & sfeer</h3>
 
                                 <Button fieldClass="header-button"
-                                        clickHandler={() => console.log("Bekijken")}
+                                        clickHandler={() => history.push('/nieuws')}
                                         isDisabled={false}> Bekijken <Goto className="shop-icon"/></Button>
                             </div>
                         </div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import {useHistory} from "react-router-dom";
 import {ReactComponent as Back} from "../../assets/Back-arrow.svg";
 import {ReactComponent as Forward} from "../../assets/Forward-arrow.svg";
 import Article from "../../components/article/Article";
@@ -15,6 +16,7 @@ import {ReactComponent as Goto} from "../../assets/go.svg";
 import Mainnavcomp from "../../components/mainnav/Mainnavcomp";
 
 function Vergezichten(props) {
+const history = useHistory();
     return (
         <>
             <Mainnavcomp
@@ -31,7 +33,7 @@ function Vergezichten(props) {
                                 <h1>Blikveld </h1>
                                         <h4>en kleurcontrasten</h4>
                                 <Button fieldClass="header-button"
-                                        clickHandler={() => console.log("Bekijken")}
+                                        clickHandler={() => history.push('/vergezichtdetails')}
                                         isDisabled={false}> Bekijken <Goto className="shop-icon"/></Button>
                             </div>
                         </div>

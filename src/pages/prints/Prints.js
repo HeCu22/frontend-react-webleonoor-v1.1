@@ -1,4 +1,5 @@
 import React from 'react';
+import {useHistory} from "react-router-dom";
 import {ReactComponent as Back} from "../../assets/Back-arrow.svg";
 import {ReactComponent as Forward} from "../../assets/Forward-arrow.svg";
 import Article from "../../components/article/Article";
@@ -14,6 +15,7 @@ import blockprint from "../../assets/images/blockprints.jpg";
 
 
 function Prints(props) {
+    const history = useHistory();
     return (
         <>
             <Mainnavcomp
@@ -30,7 +32,7 @@ function Prints(props) {
                                 <h4> Herinneringen, nostalgie en sfeerbeelden </h4>
 
                                 <Button fieldClass="header-button"
-                                        clickHandler={() => console.log("Bekijken")}
+                                        clickHandler={() => history.push('/Vergezichtdetails')}
                                         isDisabled={false}> Bekijken <Goto className="shop-icon"/></Button>
                             </div>
                         </div>

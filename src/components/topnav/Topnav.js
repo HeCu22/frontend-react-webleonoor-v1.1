@@ -15,7 +15,7 @@ function Topnav(props) {
                                 <li><Link to="/profile">Profiel</Link></li>
                                 <li><Link to="/werkwijze">Werkwijze</Link></li>
                                 <li><Link to="/contact">Contact</Link></li>
-                                <li><Link to="/">Inhoud</Link></li>
+                                <li><Link to="/portfolio">Inhoud</Link></li>
                             </ul>
                         </nav>
                     </div>
