@@ -9,7 +9,7 @@ function Portretdetails(props) {
         <>
             <Mainnavcomp
                 keuze="portretten"/>
-            <main className="outer-container impression-nieuws-details">
+            <main className="outer-container impression-portret-details">
                 <div className="inner-container">
                     <div className="outer-row">
                         <div className="mid">

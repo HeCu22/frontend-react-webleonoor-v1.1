@@ -13,14 +13,10 @@
 }
 
 
-
 .impression-nieuws-details {
 
-    background-image: url('../../assets/flower-img-background.jpg');
+    background-image: url('../../assets/images/border.png');
     background-size: 45em 18em;
-    background-repeat: no-repeat;
-    background-size: cover;
-
 }
 
 .card-portrait {
@@ -30,6 +26,7 @@
 .tilefirst {
     flex-basis: 340px;
 }
+
 .tile {
     height: unset;
 }

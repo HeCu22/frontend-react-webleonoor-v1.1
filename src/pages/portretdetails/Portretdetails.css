@@ -15,15 +15,10 @@
 }
 
 
-
 .impression-portret-details {
 
-    background-image: url('../../assets/images/colorado_Provencale.jpg');
-    /*background-size: 45em 18em;*/
-    background-position: 130px 5%;
-    background-repeat: no-repeat;
-    background-size: cover;
-
+    background-image: url('../../assets/images/border_keltic.png');
+    /*background-size: 50em 17em;*/
 }
 
 .card-portrait {

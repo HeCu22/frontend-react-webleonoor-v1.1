@@ -23,7 +23,7 @@ function Contact(props) {
                                                                 alt="artistieke foto"/></span>
                             <section className="text-space">
                                 <h1>Contact me</h1>
-                                <p><strong>name:</strong> Wilnora </p>
+                                <p><strong>name:</strong> Helga Cuijpers </p>
                                 <p><strong>Email:</strong> webleonoor@gmail.com </p>
                                 <h3>Thanks!</h3>
                                 <p>
