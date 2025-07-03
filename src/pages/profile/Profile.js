@@ -1,7 +1,7 @@
 import React from 'react';
 import './Profile.css';
 import {Link} from "react-router-dom";
-import profielfoto from "../../assets/profile.jpg";
+import profielfoto from "../../assets/hecu_avatar.png";
 import pdf from "../../assets/resume.pdf";
 import Mainnavcomp from "../../components/mainnav/Mainnavcomp";
 
@@ -22,7 +22,7 @@ function Profile(props) {
                         <h1>Profiel Pagina</h1>
 
                         <div className="space">
-                            <span className="picture-span"><img className="picture-space" src={profielfoto}
+                            <span className="picture-span"><img className="profile-picture-space" src={profielfoto}
                                                                 alt="profiel foto"/></span>
                             <section className="text-space">
                                 <h1>About me</h1>
@@ -52,13 +52,13 @@ function Profile(props) {
                                 </p>
                                 <p>
                                     Sommige oud docenten tekenen en schilderen en enkele medecursisten die ik volg, timmeren aardig aan de weg met eigen werk. <br/>
-                                    Dat inspireert wel, maar meer inspiratie ontving ik via on-line cursussen in 2020 en 2021 van Mary Jane Begin, Amy Wynne en Will Kemp. Ook vind ik inspiratie uit boeken van Bernd Klimmer, Gemma Guasch, Lorena Kloosterboer en anderen.
+                                    Dat inspireert wel, maar meer inspiratie ontving ik via on-line cursussen in 2020 en 2021 van Mary Jane Begin, Amy Wynne en Will Kemp. Ook vind ik inspiratie uit boeken van Bernd Klimmer, Gemma Guasch, José María Parramón, Lorena Kloosterboer, Lexi Sundell en anderen.
                                 </p>
 
                                 <p>
                                     In 2022 en 2023 had ik de tijd om mijn website te moderniseren, om er
                                     gemakkelijker iets bij te kunnen zetten.
-                                    Ik heb toen een cursus webdevelopment bij Novi Hogeschool opgepakt om mijn website
+                                    Ik heb toen een cursus webdevelopment bij Novi Hogeschool gevolgd om mijn website
                                     er volgens de laatste trends en eisen uit te laten zien.
 
                                 </p>

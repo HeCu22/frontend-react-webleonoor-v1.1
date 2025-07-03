@@ -29,7 +29,8 @@ function Portfolio(props) {
                         </div>
                         <div className="tile">
                             <Article
-                                fieldclass="card-portfolio"
+                                fieldclass="card-por
+                                tfolio"
                                 tag="jamesdean"
                                 image={jamesdean}
                                 title="James Dean charming"
