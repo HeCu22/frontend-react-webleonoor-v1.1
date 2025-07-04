@@ -22,12 +22,18 @@ function Werkwijze(props) {
                                 <p><strong>Atelier:</strong> vanuit huis of op locatie</p>
                                 <p><strong>Locatie:</strong> Weert </p>
                                 <h3>Technieken</h3>
-                                <p>Meestal schilder ik met acryl of gebruik collages. Printstucturen maak ik met inkt in blockprint. Tekeningen met grafiet of inkt. </p>
+                                <p>Meestal schilder ik met acryl en soms gebruik ik collages van speciaal papier of
+                                    fotomateriaal. </p>
+                                <p> Schetsen en tekeningen maak ik met grafietpotlood,
+                                    houtskool, fijnschrijver of inkt. <br/>
+                                    De Printstrukturen heb ik met blockprint inkt gemaakt.
+                                </p>
                                 <p>
-                                   Het papier dat ik gebruik is meestal op poster formaat. Daarnaast schilder ik ook op canvas panelen.
+                                    Het papier dat ik gebruik is meestal op poster formaat. Daarnaast schilder ik ook op
+                                    canvas panelen.
 
                                 </p>
-                                <p>Mijn specialiteit is portretten en sfeerbeelden</p>
+                                <p>Mijn specialiteit is portretten, gebouwen en sfeerbeelden en ik houd het meest van figuratieve kunst.</p>
 
                             </section>
                         </div>

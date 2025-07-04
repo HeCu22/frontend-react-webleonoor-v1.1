@@ -30,36 +30,28 @@ function Profile(props) {
                                 <p><strong>Email:</strong> webleonoor@gmail.com </p>
                                 <h3>Ambitie:</h3>
                                 <p>
-                                    Gedurende werk en studie heb ik tussentijds cursussen tekenen/schilderen gevolgd en geëxperimenteert met
+                                    Gedurende werk en studie heb ik tussentijds cursussen tekenen/schilderen gevolgd en geëxperimenteerd met
                                     verschillende technieken. <br/>
-                                    Vanaf 2020 ben ik met meer regelmaat bezig met tekenen of schilderen.<br/>
+                                    Sinds 2020 ben ik met meer regelmaat bezig met tekenen of schilderen.<br/>
 
-                                    Komende vijf jaar heb ik hopelijk alle tijd voor creatieve hobby's vanuit huis. </p>
+                                    Komende vijf jaar hoop ik nog meer tijd te kunnen besteden aan creatieve hobby's vanuit huis. </p>
                                 <p>
-                                    Samen met medecursisten van een schildercursus heb ik ooit enkele exposities gegegeven.
-                                    Het cursus-eind-project had een aantal mooie resultaten. Eén schilderij heb ik toen verkocht
-                                    en één opgehangen in de huiskamer van mijn ouders. <br/>
+                                    Samen met medecursisten van een schildercursus heb ik een expositie gegeven van de eindresultaten.
+                                    Eén schilderij heb ik toen verkocht en één opgehangen in de huiskamer van mijn ouders. <br/>
                                     Tegelijkertijd maakte ik toen een website om mijn hele portfolio te presenteren.
                                 </p>
 
                                 <p>
-                                    In 2015 en 2016 volgde ik portret en model tekencursussen en in 2018 een
-                                    korte cursus hand-lettering. <br/>
-                                    Uit die tijd heb ik een aantal schetsen en composities en een aantal daarvan wil ik in
-                                    een verhaal of achtergrond zetten. <br/>
-                                    Onder andere aan de hand van een aantal filmseries met mooie beelden. Daar wil ik ook wat nieuwe
-                                    schetsen uit opzetten
-                                </p>
-                                <p>
-                                    Sommige oud docenten tekenen en schilderen en enkele medecursisten die ik volg, timmeren aardig aan de weg met eigen werk. <br/>
-                                    Dat inspireert wel, maar meer inspiratie ontving ik via on-line cursussen in 2020 en 2021 van Mary Jane Begin, Amy Wynne en Will Kemp. Ook vind ik inspiratie uit boeken van Bernd Klimmer, Gemma Guasch, José María Parramón, Lorena Kloosterboer, Lexi Sundell en anderen.
+                                    In 2015 en 2016 volgde ik portret- en modeltekencursussen en in 2018 een korte cursus hand-lettering. <br/>
+                                    Dat is natuurlijk inspirerend en die vind ik ook in filmseries met mooi beelden en in boeken van kunstschilders zoals Bernd Klimmer, José María Parramón, Lorena Kloosterboer, Lexi Sundell, Gill Barron en Marilyn Scott.
                                 </p>
 
                                 <p>
-                                    In 2022 en 2023 had ik de tijd om mijn website te moderniseren, om er
-                                    gemakkelijker iets bij te kunnen zetten.
-                                    Ik heb toen een cursus webdevelopment bij Novi Hogeschool gevolgd om mijn website
-                                    er volgens de laatste trends en eisen uit te laten zien.
+                                    In 2022 en 2023 had ik de tijd om mijn website te moderniseren en aan te vullen. <br/>
+                                    Ik heb toen een cursus html en webdevelopment bij Novi Hogeschool gevolgd om mijn website
+                                    er volgens de laatste trends en eisen uit te laten zien. <br/>
+                                    In 2024 ben ik lid geworden van de kunstkring van het openlucht museum Eynderhoof waar men ook een Anton Pieck evenement heeft.
+                                    Recentelijk was ik bezig met het schilderen van oude geveltjes en in 2025 besloot ik een korte cursus kunstbeschouwing te gaan doen over Pieter Bruegel de Oudere.
 
                                 </p>
                                 <p>

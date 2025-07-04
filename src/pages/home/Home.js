@@ -4,7 +4,7 @@ import './Home.css';
 import {ReactComponent as Back} from "../../assets/Back-arrow.svg";
 import {ReactComponent as Forward} from "../../assets/Forward-arrow.svg";
 import Article from "../../components/article/Article";
-import tulip from "../../assets/images/yellow_tulip.jpg";
+import gevelfront from "../../assets/images/gevelfrontaal.jpg";
 import roze from "../../assets/images/princess_pink.jpg";
 import loren from "../../assets/images/sofia_loren_in_iItalia.jpg";
 import boots from "../../assets/images/snow_boots.jpg";
@@ -38,9 +38,9 @@ function Home(props) {
 
                         <Article
                             fieldclass="top-card"
-                            tag="Bloemen"
-                            image={tulip}
-                            title="Tulp"
+                            tag="gevels"
+                            image={gevelfront}
+                            title="Gevel in kleur"
                             description="50x70 acryl op papier"
                         />
                     </div>
