@@ -1,0 +1,81 @@
+.main-background-profile {
+    background-color: var(--color5);
+    min-height: 100vh;
+}
+
+
+
+.profile-picture-space {
+    flex: 0 1 250px;
+    max-width: 250px;
+    height: 250px;
+    border-radius: 500px;
+    width: 100%;
+    object-fit: cover;
+    /*object-position: -2px 10%;*/
+    margin-top: 1rem;
+    margin-bottom: 1rem;}
+
+.picture-span {
+    flex: 0 1 250px;
+}
+
+.picture-span {
+    flex: 0 1 400px;
+}
+
+/* Auteur image */
+.profile-picture-space {
+    /*height: 80px;*/
+    border-radius: 20px;
+    width: 150px;
+    margin-block: 20px;
+}
+
+.picture-space {
+    width: 100%;
+    flex-basis: 20px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px;
+}
+
+
+.space {
+    flex-basis: 400px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    background-color: var(--color2);
+    border: 1px solid var(--color1);
+    border-radius: 8px;
+    padding: 10px;
+
+}
+
+.text-space {
+    flex: 1 1 500px;
+    background-color: var(--color2);
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    height: unset;
+}
+
+.text-space p {
+    font-size: 16px;
+    max-width: unset;
+}
+
+.mid-profile {
+display: flex;
+    flex-direction: column;
+}

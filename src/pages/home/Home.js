@@ -1,35 +1,26 @@
 import React from 'react';
-import Mainnav from "../../components/mainnav/Mainnav";
+import {useHistory} from "react-router-dom";
 import './Home.css';
-import {Link} from "react-router-dom";
 import {ReactComponent as Back} from "../../assets/Back-arrow.svg";
 import {ReactComponent as Forward} from "../../assets/Forward-arrow.svg";
 import Article from "../../components/article/Article";
-import tulip from "../../assets/images/yellow_tulip.jpg";
+import gevelfront from "../../assets/images/gevelfrontaal.jpg";
 import roze from "../../assets/images/princess_pink.jpg";
 import loren from "../../assets/images/sofia_loren_in_iItalia.jpg";
 import boots from "../../assets/images/snow_boots.jpg";
 import vogels from "../../assets/images/vogels_in_vlucht.jpg";
 import Button from "../../components/button/Button";
 import {ReactComponent as Goto} from "../../assets/go.svg";
+import Mainnavcomp from "../../components/mainnav/Mainnavcomp";
 
 function Home(props) {
+    const history = useHistory();
     return (
         <>
-            <Mainnav>
+            <Mainnavcomp
+                keuze = "nieuws"
+            />
 
-                <ul className="outer-row">
-                    <li><Link to="/culturemix"> Cultuurmix </Link></li>
-                    <li><Link to="/jamesdean"> James Dean </Link></li>
-                    <li><Link to="/vergezichten"> Kleur </Link></li>
-                    <li><Link to="/portretten">Portret</Link></li>
-                    <li><Link to="/prints"> Prints</Link></li>
-                    <li><Link to="/sprookjes"> Sprookjes </Link></li>
-                    <li><Link to="/sterren"> Sterren</Link></li>
-                    <li><Link to="/schetsen"> Zwart/wit </Link></li>
-                </ul>
-
-            </Mainnav>
             <main className="outer-container main-header-background">
                 <div className="inner-container">
                     <div className="outer-row">
@@ -40,16 +31,16 @@ function Home(props) {
                                 <h3> Composities Portret & sfeer</h3>
 
                                 <Button fieldClass="header-button"
-                                        clickHandler={() => console.log("Bekijken")}
+                                        clickHandler={() => history.push('/nieuws')}
                                         isDisabled={false}> Bekijken <Goto className="shop-icon"/></Button>
                             </div>
                         </div>
 
                         <Article
                             fieldclass="top-card"
-                            tag="Bloemen"
-                            image={tulip}
-                            title="Tulp"
+                            tag="gevels"
+                            image={gevelfront}
+                            title="Gevel in kleur"
                             description="50x70 acryl op papier"
                         />
                     </div>

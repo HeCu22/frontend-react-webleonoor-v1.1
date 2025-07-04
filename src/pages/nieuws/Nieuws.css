@@ -1,0 +1,32 @@
+.tile, .tilefirst {
+    flex-basis: 18em;
+    flex-grow: 0;
+    flex-shrink: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--color2);
+    border: 1px solid var(--color3);
+    border-radius: 8px;
+    padding: 0 20px;
+    margin-left: 20px;
+}
+
+
+.impression-nieuws-details {
+
+    background-image: url('../../assets/images/window.jpg');
+    background-size: 45em 18em;
+}
+
+.card-portrait {
+    width: 300px;
+}
+
+.tilefirst {
+    flex-basis: 340px;
+}
+
+.tile {
+    height: unset;
+}

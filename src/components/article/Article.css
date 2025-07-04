@@ -1,4 +1,4 @@
-.card, .card-portrait {
+.card, .card-portrait, .card-portfio {
     width: 400px;
     flex-basis: 300px;
     flex-grow: 0;
@@ -45,6 +45,12 @@ article p {
     font-weight: 300;
     font-size: 18px;
 
+}
+
+.card-portfolio a {
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 10px;
 }
 
 article p span {

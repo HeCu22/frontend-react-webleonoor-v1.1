@@ -95,6 +95,10 @@ main {
     background-color: var(--color4);
 }
 
+a {
+    text-decoration: none;
+}
+
 .inner-container {
     flex-basis: 1400px;
     flex-grow: 0;
